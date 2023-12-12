@@ -1,13 +1,14 @@
 package com.kryeit.creativestuff;
 
-import com.kryeit.creativestuff.command.*;
-import com.kryeit.creativestuff.listener.PlayerDeath;
+import com.kryeit.creativestuff.command.Discord;
+import com.kryeit.creativestuff.command.Kofi;
+import com.kryeit.creativestuff.command.Rules;
+import com.kryeit.creativestuff.command.Vote;
 import com.kryeit.creativestuff.listener.ServerLogin;
 import com.kryeit.creativestuff.queue.Queue;
 import com.kryeit.creativestuff.queue.QueueHandler;
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 
 public class CreativeStuff implements DedicatedServerModInitializer {
@@ -22,7 +23,6 @@ public class CreativeStuff implements DedicatedServerModInitializer {
     public void registerEvents() {
         ServerPlayConnectionEvents.INIT.register(new ServerLogin());
         ServerPlayConnectionEvents.INIT.register(new QueueHandler());
-        ServerLivingEntityEvents.AFTER_DEATH.register(new PlayerDeath());
     }
 
     public void registerCommands() {
