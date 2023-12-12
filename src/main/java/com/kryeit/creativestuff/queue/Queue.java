@@ -1,4 +1,4 @@
-package com.kryeit.stuff.queue;
+package com.kryeit.creativestuff.queue;
 
 import net.minecraft.text.Text;
 

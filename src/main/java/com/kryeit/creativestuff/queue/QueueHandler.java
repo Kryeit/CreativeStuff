@@ -1,6 +1,6 @@
-package com.kryeit.stuff.queue;
+package com.kryeit.creativestuff.queue;
 
-import com.kryeit.stuff.Utils;
+import com.kryeit.creativestuff.Utils;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import static com.kryeit.stuff.Stuff.queue;
+import static com.kryeit.creativestuff.CreativeStuff.queue;
 
 public class QueueHandler implements ServerPlayConnectionEvents.Init {
     private static final ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);

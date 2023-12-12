@@ -1,4 +1,4 @@
-package com.kryeit.stuff.afk;
+package com.kryeit.creativestuff.afk;
 
 // This class has been mostly made by afkdisplay mod
 // https://github.com/beabfc/afkdisplay

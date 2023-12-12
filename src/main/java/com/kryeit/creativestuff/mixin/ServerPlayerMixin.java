@@ -1,7 +1,7 @@
-package com.kryeit.stuff.mixin;
+package com.kryeit.creativestuff.mixin;
 
-import com.kryeit.stuff.afk.AfkPlayer;
-import com.kryeit.stuff.afk.Config;
+import com.kryeit.creativestuff.afk.AfkPlayer;
+import com.kryeit.creativestuff.afk.Config;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

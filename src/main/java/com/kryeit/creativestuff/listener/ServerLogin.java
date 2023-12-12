@@ -1,6 +1,6 @@
-package com.kryeit.stuff.listener;
+package com.kryeit.creativestuff.listener;
 
-import com.kryeit.stuff.MinecraftServerSupplier;
+import com.kryeit.creativestuff.MinecraftServerSupplier;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
@@ -36,13 +36,10 @@ public class ServerLogin implements ServerPlayConnectionEvents.Init {
 
         // Has NOT joined before
         MinecraftServerSupplier.getServer().getPlayerManager().broadcast(
-                Text.literal("Welcome " + player.getName() + " to Kryeit!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
+                Text.literal("Welcome " + player.getName() + " to Kryeitive!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
                 false
         );
 
-        player.sendMessage(Text.literal("Kryeit is a long standing Create mod server, it has its pecularities.\n" +
-                "Teleportation: there is a grid of posts all over the world, use /post to see the closest.\n" +
-                "Claiming: there is a claim system, use /claim to protect your stuff.\n" +
-                "Missions: there is weekly missions to earn coins, use H to see them.").setStyle(Style.EMPTY.withColor(Formatting.AQUA)));
+        player.sendMessage(Text.literal("Welcome to Kryeitive! Happy building :).").setStyle(Style.EMPTY.withColor(Formatting.AQUA)));
     }
 }

@@ -1,4 +1,4 @@
-package com.kryeit.stuff;
+package com.kryeit.creativestuff;
 
 public class Utils {
 

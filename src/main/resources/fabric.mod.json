@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "stuff",
+  "id": "creativestuff",
   "version": "${version}",
-  "name": "Stuff",
+  "name": "CreativeStuff",
   "description": "",
   "authors": [
     "MuriPlz"
   ],
   "contact": {
-    "repo": "https://github.com/Kryeit/Stuff-Refabricated"
+    "repo": "https://github.com/Kryeit/CreativeStuff"
   },
   "license": "MIT",
-  "icon": "assets/stuff/icon.jpg",
+  "icon": "assets/creativestuff/icon.jpg",
   "environment": "server",
   "entrypoints": {
     "server": [
-      "com.kryeit.stuff.Stuff"
+      "com.kryeit.creativestuff.CreativeStuff"
     ]
   },
   "mixins": [
-    "stuff.mixins.json"
+    "creativestuff.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

@@ -1,4 +1,4 @@
-package com.kryeit.stuff.command;
+package com.kryeit.creativestuff.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;

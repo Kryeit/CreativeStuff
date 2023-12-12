@@ -1,6 +1,6 @@
-package com.kryeit.stuff.mixin;
+package com.kryeit.creativestuff.mixin;
 
-import com.kryeit.stuff.MinecraftServerSupplier;
+import com.kryeit.creativestuff.MinecraftServerSupplier;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

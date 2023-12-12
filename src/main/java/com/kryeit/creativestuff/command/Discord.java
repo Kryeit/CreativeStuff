@@ -1,4 +1,4 @@
-package com.kryeit.stuff.command;
+package com.kryeit.creativestuff.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
@@ -12,7 +12,7 @@ import net.minecraft.text.Text;
 
 import java.util.function.Supplier;
 
-public class Rules {
+public class Discord {
     public static int execute(CommandContext<ServerCommandSource> context) {
         ServerCommandSource source = context.getSource();
         ServerPlayerEntity player = source.getPlayer();
@@ -23,14 +23,14 @@ public class Rules {
             return 0;
         }
 
-        player.sendMessage(Text.literal("Rules -> https://discord.com/channels/910626990468497439/1097952697820389467")
-                .setStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.com/channels/910626990468497439/1097952697820389467"))));
+        player.sendMessage(Text.literal("Discord -> https://discord.gg/5zQ8RVEzvw")
+                .setStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.gg/5zQ8RVEzvw"))));
         return Command.SINGLE_SUCCESS;
     }
 
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
-        dispatcher.register(CommandManager.literal("rules")
-                .executes(Rules::execute)
+        dispatcher.register(CommandManager.literal("discord")
+                .executes(Discord::execute)
         );
     }
 }

@@ -1,8 +1,8 @@
-package com.kryeit.stuff.mixin;
+package com.kryeit.creativestuff.mixin;
 
-import com.kryeit.stuff.Utils;
-import com.kryeit.stuff.afk.AfkPlayer;
-import com.kryeit.stuff.afk.Config;
+import com.kryeit.creativestuff.Utils;
+import com.kryeit.creativestuff.afk.AfkPlayer;
+import com.kryeit.creativestuff.afk.Config;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import net.minecraft.server.network.ServerPlayNetworkHandler;

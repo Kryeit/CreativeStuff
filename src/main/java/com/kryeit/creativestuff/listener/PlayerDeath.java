@@ -1,4 +1,4 @@
-package com.kryeit.stuff.listener;
+package com.kryeit.creativestuff.listener;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.entity.LivingEntity;
