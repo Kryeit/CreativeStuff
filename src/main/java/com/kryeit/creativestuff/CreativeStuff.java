@@ -29,6 +29,9 @@ public class CreativeStuff implements DedicatedServerModInitializer {
             Rules.register(dispatcher);
             Vote.register(dispatcher);
             Teleport.register(dispatcher);
+
+            Creative.register(dispatcher);
+            Survival.register(dispatcher);
         });
     }
 }
