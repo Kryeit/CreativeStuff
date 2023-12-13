@@ -1,9 +1,6 @@
 package com.kryeit.creativestuff;
 
-import com.kryeit.creativestuff.command.Discord;
-import com.kryeit.creativestuff.command.Kofi;
-import com.kryeit.creativestuff.command.Rules;
-import com.kryeit.creativestuff.command.Vote;
+import com.kryeit.creativestuff.command.*;
 import com.kryeit.creativestuff.listener.ServerLogin;
 import com.kryeit.creativestuff.queue.Queue;
 import com.kryeit.creativestuff.queue.QueueHandler;
@@ -31,6 +28,7 @@ public class CreativeStuff implements DedicatedServerModInitializer {
             Kofi.register(dispatcher);
             Rules.register(dispatcher);
             Vote.register(dispatcher);
+            Teleport.register(dispatcher);
         });
     }
 }
