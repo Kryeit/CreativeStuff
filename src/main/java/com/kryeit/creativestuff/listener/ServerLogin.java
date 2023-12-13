@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
 import java.io.File;
+import java.util.Objects;
 import java.util.UUID;
 
 public class ServerLogin implements ServerPlayConnectionEvents.Init {
@@ -17,6 +18,8 @@ public class ServerLogin implements ServerPlayConnectionEvents.Init {
     @Override
     public void onPlayInit(ServerPlayNetworkHandler handler, MinecraftServer server) {
         ServerPlayerEntity player = handler.player;
+
+        if (Objects.equals(player.getName().toString(), "Conductor")) return;
 
         File playerDataDirectory = new File("world/playerdata/");
 
@@ -36,7 +39,7 @@ public class ServerLogin implements ServerPlayConnectionEvents.Init {
 
         // Has NOT joined before
         MinecraftServerSupplier.getServer().getPlayerManager().broadcast(
-                Text.literal("Welcome " + player.getName() + " to Kryeitive!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
+                Text.literal("Welcome " + player.getName().toString() + " to Kryeitive!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
                 false
         );
 
