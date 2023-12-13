@@ -19,7 +19,7 @@ public class ServerLogin implements ServerPlayConnectionEvents.Init {
     public void onPlayInit(ServerPlayNetworkHandler handler, MinecraftServer server) {
         ServerPlayerEntity player = handler.player;
 
-        if (Objects.equals(player.getName().toString(), "Conductor")) return;
+        if (Objects.equals(player.getName().getString(), "Conductor")) return;
 
         File playerDataDirectory = new File("world/playerdata/");
 
@@ -39,7 +39,7 @@ public class ServerLogin implements ServerPlayConnectionEvents.Init {
 
         // Has NOT joined before
         MinecraftServerSupplier.getServer().getPlayerManager().broadcast(
-                Text.literal("Welcome " + player.getName().toString() + " to Kryeitive!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
+                Text.literal("Welcome " + player.getName().getString() + " to Kryeitive!").setStyle(Style.EMPTY.withColor(Formatting.AQUA)),
                 false
         );
 
