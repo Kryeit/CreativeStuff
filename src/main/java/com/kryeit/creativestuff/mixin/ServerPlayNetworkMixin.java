@@ -35,6 +35,7 @@ public abstract class ServerPlayNetworkMixin {
             afkPlayer.stuff$enableAfk();
             if (Utils.isServerFull() && !Permissions.check(player, "stuff.afk", false)) {
                 player.networkHandler.disconnect(Text.of("You've been kicked to leave room for other players"));
+                lastActiveTime.remove(player.getUuid());
             }
         }
     }
