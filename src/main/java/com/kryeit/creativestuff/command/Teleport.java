@@ -45,7 +45,7 @@ public class Teleport {
     }
 
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
-        dispatcher.register(CommandManager.literal("teleport")
+        dispatcher.register(CommandManager.literal("goto")
                 .then(CommandManager.argument("name", StringArgumentType.word())
                         .suggests(PlayerSuggestionProvider.suggestOnlinePlayers())
                         .executes(context -> execute(context, StringArgumentType.getString(context, "name")))
